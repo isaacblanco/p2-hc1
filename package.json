@@ -1,8 +1,8 @@
 {
-  "name": "p1-hc1",
+  "name": "p2-hc1",
   "version": "1.0.0",
   "private": true,
-  "description": "Pec P1 - Html y CSS I - 2024s2",
+  "description": "Pec P2 - Html y CSS I - 2024s2",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -13,7 +13,7 @@
     "stylelint": "stylelint \"src/**/*.scss\""
   },
   "keywords": [
-    "P1",
+    "P2",
     "Html & CSS I",
     "2024s2"
   ],
@@ -31,9 +31,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isaacblanco/p1-hc1.git"
+    "url": "git+https://github.com/isaacblanco/p2-hc1.git"
   },
-  "homepage": "https://p1-htmlcssi-ibp.netlify.app/",
+  "homepage": "https://p2-htmlcssi-ibp.netlify.app/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "autoprefixer": "^10.4.15",

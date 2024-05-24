@@ -24,18 +24,58 @@
   height: 100vh;
 }
 
-.hero {
+.hero-dark {
   align-items: center; /* Centrar en vertical */
-  background-image: url("./../../assets/pictures/images/hero.jpg");
+  background-image: url("./../../assets/pictures/images/hero-dark-big.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Repartiendo */
   margin-bottom: 48px;
   min-height: 600px;
   padding: 0 20px;
   text-align: center;
+  z-index: 0;
+
+  @include respond-to("medium") {
+    background-image: url("./../../assets/pictures/images/hero-dark-med.jpg");
+  }
+
+  @include respond-to("small") {
+    background-image: url("./../../assets/pictures/images/hero-dark-small.jpg");
+  }
+}
+
+.hero {
+  align-items: center; /* Centrar en vertical */
+  background-color: transparent;
+  background-image: url("./../../assets/pictures/images/hero-big.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(
+    20% 0,
+    0% 100%,
+    21% 100%,
+    0 70%,
+    100% 65%,
+    100% 70%,
+    35% 81%,
+    100% 75%,
+    100% 83%,
+    79% 0
+  );
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Repartiendo */
+  min-height: 600px;
+  text-align: center;
+  z-index: 1;
+
+  @include respond-to("medium") {
+    background-image: url("./../../assets/pictures/images/hero-med.jpg");
+  }
+
+  @include respond-to("small") {
+    background-image: url("./../../assets/pictures/images/hero-small.jpg");
+  }
 
   &__h1 {
     color: map-get($colors, "secondary");
@@ -48,6 +88,22 @@
   }
 }
 
+.hero:hover {
+  transition: all 0.5s ease-in-out;
+  clip-path: polygon(
+    9% 0,
+    8% 100%,
+    0 100%,
+    1% 64%,
+    100% 60%,
+    100% 70%,
+    100% 76%,
+    100% 100%,
+    86% 100%,
+    100% 0
+  );
+}
+
 .home-nav {
   align-items: center;
   display: flex; /* Use flexbox for horizontal layout */
@@ -57,6 +113,7 @@
   margin: -120px auto 0;
   padding: 0;
   width: 100%;
+  z-index: 50;
 
   @include respond-to("medium") {
     flex-direction: column;

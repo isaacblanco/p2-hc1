@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="icon" type="image/svg" href="./assets/images/favicon.svg" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -24,7 +25,9 @@
 
     <main class="main">
       <article>
-        <h1>Album: DIVISIVE</h1>
+        <div class="album-cover">
+          <h1>Album: DIVISIVE</h1>
+        </div>
 
         <div class="container">
           <section id="Intro">
@@ -57,10 +60,20 @@
           <section class="section">
             <div class="album">
               <div class="album__cover">
-                <img
-                  src="./assets/pictures/albums/divisive.jpg"
-                  alt="Portada del álbum Divisive"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 728px)"
+                    srcset="./assets/pictures/albums/divisive-med.jpg"
+                  />
+                  <source
+                    media="(min-width: 420px)"
+                    srcset="./assets/pictures/albums/divisive-small.jpg"
+                  />
+                  <img
+                    src="./assets/pictures/albums/divisive-big.jpg"
+                    alt="Album - Divisive"
+                  />
+                </picture>
               </div>
               <div class="album__details">
                 <div class="album__detail">
@@ -114,6 +127,7 @@
               ></iframe>
             </div>
           </section>
+          <section></section>
           <section class="section">
             <div class="page-nav-buttons">
               <button>&laquo; Anterior</button>

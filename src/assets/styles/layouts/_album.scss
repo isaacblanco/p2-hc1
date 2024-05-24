@@ -1,3 +1,23 @@
+.album-cover {
+  background-image: url("./../../assets/images/disturbed-divisive-big.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 48px;
+  min-height: 480px;
+  padding: 0 20px;
+  text-align: center;
+
+  @include respond-to("medium") {
+    background-image: url("./../../assets/images/disturbed-divisive-med.jpg");
+    min-height: 280px;
+  }
+
+  @include respond-to("small") {
+    background-image: url("./../../assets/images/disturbed-divisive-small.jpg");
+    min-height: 200px;
+  }
+}
+
 .album {
   display: flex;
   align-items: flex-start;
