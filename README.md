@@ -63,9 +63,19 @@ Header: el mouse hover en los menús de la cabecera ya cuenta con efecto de anim
 transition: all 0.2s ease-in-out;
 ```
 
+Un listado de elementos animados incluidos en la web:
+
+- Los enlaces de la home principales, tienen efecto de hover
+- Los enlaces de los menús incorporan varias animaciones, dende color al redondeo del borde borde
+- Los h1 se reducen de tamaño en un 4% en todas las páginas
+- El clip-path de la home se mueve en el hover
+- El svg incluye animaciones
+- En el detalle la imagen del grupo muestra las camisetas al pasar sobre ellas
+- En el footer los enlaces tienen un efecto de luminosidad
+
 ### La web debe cumplir las reglas básicas WCAG 2.1Links to an external site. A y AA de accesibilidad
 
-https://achecker.ca/checker
+https://validator.w3.org/ se ha revisado
 
 ## Portada
 

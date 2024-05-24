@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="ES">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,21 +10,14 @@
     <link rel="icon" type="image/svg" href="./assets/images/favicon.svg" />
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
     <include src="./views/header.html"></include>
+
+    <div class="album-cover">
+      <h1>Album: DIVISIVE</h1>
+    </div>
 
     <main class="main">
       <article>
-        <div class="album-cover">
-          <h1>Album: DIVISIVE</h1>
-        </div>
-
         <div class="container">
           <section id="Intro">
             <p>
@@ -101,11 +90,10 @@
 
           <section class="text-center">
             <iframe
+              class="iframe-spotify"
               title="Spotify Embed: Divisive"
               style="border-radius: 12px"
-              width="100%"
               height="380"
-              frameborder="0"
               allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
@@ -113,50 +101,49 @@
             ></iframe>
           </section>
 
-          <section>
+          <section class="section">
             <div class="efecto-ani">
               <img
                 class="image-ani"
-                srcset="./assets/images/disturbed-band-small.jpg small,
-                  ./assets/images/disturbed-band-med.jpg med,
-                  ./assets/images/disturbed-band-big.jpg big"
-                sizes="(max-width: 420px, small),
-                    (max-width: 728px) med,
-                    big"
+                srcset="
+                  ./assets/images/disturbed-band-small.jpg  420w,
+                  ./assets/images/disturbed-band-med.jpg    728w,
+                  ./assets/images/disturbed-band-big.jpg   1200w
+                "
+                sizes="(max-width: 420px) 420px,
+                    (max-width: 728px) 728px,
+                    1200px"
                 src="./assets/images/disturbed-band-big.jpg"
                 alt="Disturbed - Band"
               />
 
               <img
                 class="image-ani"
-                srcset="./assets/images/disturbed-2022-small.jpg small,
-                  ./assets/images/disturbed-2022-med.jpg med,
-                  ./assets/images/disturbed-2022-big.jpg big"
-                sizes="(max-width: 420px, small),
-                    (max-width: 728px) med,
-                    big"
+                srcset="
+                  ./assets/images/disturbed-2022-small.jpg  420w,
+                  ./assets/images/disturbed-2022-med.jpg    728w,
+                  ./assets/images/disturbed-2022-big.jpg   1200w
+                "
+                sizes="(max-width: 420px) 420px,
+                    (max-width: 728px) 728px,
+                    1200px"
                 src="./assets/images/disturbed-2022-big.jpg"
                 alt="Disturbed - Camiseta"
               />
             </div>
-          </section>
 
-          <section class="section">
             <div class="video-container">
               <iframe
                 width="640"
                 height="360"
                 src="https://www.youtube-nocookie.com/embed/fpUpVznI4Yc?si=zrc4OJ2tIoPmN6IP"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
-          </section>
-          <section></section>
-          <section class="section">
+
             <div class="page-nav-buttons">
               <button>&laquo; Anterior</button>
               <button>Siguiente &raquo;</button>
