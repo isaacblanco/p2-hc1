@@ -2,7 +2,7 @@
 
 .header {
   align-items: center; /* Centrar en vertical */
-  background-image: url("./../../assets/pictures/images/hero-big.jpg");
+  background-image: url("./../../assets/pictures/images/hero-dark-big.jpg");
   background-size: cover;
   background-position: top;
   display: flex;
@@ -13,10 +13,10 @@
   text-align: center;
 
   @include respond-to("medium") {
-    background-image: url("./../../assets/pictures/images/hero-med.jpg");
+    background-image: url("./../../assets/pictures/images/hero-dark-med.jpg");
   }
   @include respond-to("small") {
-    background-image: url("./../../assets/pictures/images/hero-small.jpg");
+    background-image: url("./../../assets/pictures/images/hero-dark-small.jpg");
   }
 
   &__h1 {
@@ -69,8 +69,10 @@
     }
 
     a:hover {
-      transition: all 0.2s ease-in-out;
       background-color: rgba(map-get($colors, "secondary"), 0.25);
+      border-radius: 16px;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
     }
   }
 
@@ -83,9 +85,6 @@
       list-style-type: none;
     }
   }
-}
-
-.header::before {
 }
 
 // Asegura la responsividad con media queries

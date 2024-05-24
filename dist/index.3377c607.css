@@ -45,9 +45,14 @@ a {
 
 h1 {
   text-align: center;
-  background-color: #414141;
+  background-color: #292929cc;
   margin: auto;
   padding: 2rem;
+  transition: transform .3s;
+}
+
+h1:hover {
+  transform: scale(1.1);
 }
 
 .section {
@@ -193,7 +198,7 @@ cite {
 
 .header {
   text-align: center;
-  background-image: url("hero-big.a8323609.jpg");
+  background-image: url("hero-dark-big.32e546c6.jpg");
   background-position: top;
   background-size: cover;
   flex-wrap: wrap;
@@ -206,13 +211,13 @@ cite {
 
 @media (width <= 768px) {
   .header {
-    background-image: url("hero-med.76ca0be3.jpg");
+    background-image: url("hero-dark-med.144dc7df.jpg");
   }
 }
 
 @media (width <= 420px) {
   .header {
-    background-image: url("hero-small.5b7af6fd.jpg");
+    background-image: url("hero-dark-small.0bdd1eb2.jpg");
   }
 }
 
@@ -271,7 +276,9 @@ cite {
 }
 
 .header__li a:hover {
+  text-transform: uppercase;
   background-color: #efd1a440;
+  border-radius: 16px;
   transition: all .2s ease-in-out;
 }
 
@@ -593,6 +600,87 @@ cite {
   }
 }
 
+.efecto-ani {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.efecto-ani .image-ani {
+  width: 100%;
+  transition: opacity .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.efecto-ani .image-ani:nth-child(2) {
+  opacity: 0;
+}
+
+.efecto-ani .image-ani:nth-child(2):hover {
+  opacity: 1;
+}
+
+svg {
+  width: 100%;
+  max-height: 220px;
+}
+
+.line {
+  stroke: #efd1a466;
+  stroke-width: 28px;
+  animation: 10s linear infinite move;
+}
+
+.line:nth-child(2) {
+  animation-duration: 8s;
+}
+
+.line:nth-child(3) {
+  animation-duration: 12s;
+}
+
+.line:nth-child(4) {
+  animation-duration: 14s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+text {
+  dominant-baseline: middle;
+  fill: #212121;
+  text-anchor: middle;
+  font-family: poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 142px;
+  font-weight: bold;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: .5;
+    transform: scale(.1);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .footer {
   text-align: center;
   background-color: #efd1a40d;
@@ -616,5 +704,10 @@ cite {
 
 .footer ul li {
   display: inline-block;
+}
+
+.footer ul li a:hover {
+  animation-name: bounceIn;
+  animation-duration: 2s;
 }
 /*# sourceMappingURL=index.3377c607.css.map */

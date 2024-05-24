@@ -53,7 +53,7 @@ Veo que tiene dos opciones, el uso de picture con diferentes origenes o el uso d
 
 ### La web debe ser responsive
 
-Se han aplicado
+Se han aplicado las técnicas necesarias para que la página sea responsive.
 
 ### La web debe tener algunos elementos animados mediante transiciones y animaciones
 
@@ -71,29 +71,39 @@ https://achecker.ca/checker
 
 ### Debe haber al menos un recurso gráfico editado con clip-path.
 
-Se ha agregado una capa de opacidad con clip-path sobre la imagen principal, para mejorar el efecto del inicio, adicionalmente una imagen
+Se ha agregado una capa de opacidad con clip-path sobre la imagen principal, para mejorar el efecto del inicio, adicionalmente una imagen de fondo que con el hover hace que el clip-path se modifique en medio segundo.
 
 ## Página de detalle
 
 ### Hay que añadir una imagen destacada representativa del contenido que explica la página.
 
-En este caso se ha optado por usar tres imágenes principales, para ajustar la resolución por estilos.
+En este caso se ha optado por usar tres imágenes principales, para ajustar la resolución por estilos, que se sitúan justo debajo del título de la página.
 
 ### hay que añadir otras imágenes (como mínimo 2 más sin contar con el header y el footer)
 
+Se han includo dos imagenes extras que se intercambian entre sí cuando el ratón se superpone sobre ellas.
+
 ### La imagen destacada debe incluir gestión de la dirección de arte
+
+Si bien el album es el último publicado, la dirección de arte se puede enfocar a su promoción. Lo que justifica que este en esta y el resto de las pantallas.
 
 ## Página de la categoría
 
 ### La imagen destacada que hemos elegido para la página de detalle debe ser visible también en esta página.
 
+Nota: si bien la he añadido, ya se considero en la pasada P1 la cabecera de forma general. No obstante, como se ha comentado, se añade la promoción del albúm en ella, como imagen destacada, se hara lo mismo en presentación.html
+
 ## Página de presentación
 
 ### En esta página debe haber al menos un recurso gráfico hecho con SVG. Este SVG debe tener una pequeña animación mediante CSS.
 
+Se ha hecho un recuadro, con 4 lineas que se mueven, y el texto de DISTURBED sobre ello, que se puede intuir dependiendo de la combinación de tiempos de las líneas.
+
 ## Página de enlaces
 
 ### Derechos de autor
+
+Se han incluido la ruta original de todas las imágenes de donde se han obtenido.
 
 ## Extras
 

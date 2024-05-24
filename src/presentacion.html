@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="icon" type="image/svg" href="./assets/images/favicon.svg" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -23,7 +24,9 @@
     <include src="./views/header.html"></include>
 
     <main class="main">
-      <h1>Presentación</h1>
+      <div class="album-cover">
+        <h1>Presentación</h1>
+      </div>
 
       <div class="container">
         <cite>
@@ -32,6 +35,16 @@
           necesario. Todos los accesos están en el menu, más la página del
           <a href="detalle.html">detalle</a>.
         </cite>
+
+        <section>
+          <svg viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice">
+            <line class="line" x1="0" y1="40" x2="800" y2="40" />
+            <line class="line" x1="0" y1="80" x2="800" y2="80" />
+            <line class="line" x1="0" y1="120" x2="800" y2="120" />
+            <line class="line" x1="0" y1="160" x2="800" y2="160" />
+            <text x="50%" y="50%">DISTURBED</text>
+          </svg>
+        </section>
 
         <section id="intro" class="section">
           <h2 class="section__h2">La banda</h2>

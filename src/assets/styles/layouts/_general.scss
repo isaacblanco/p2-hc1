@@ -46,11 +46,16 @@ a {
 }
 
 h1 {
-  background-color: #414141;
+  background-color: rgba(41, 41, 41, 0.8);
   margin: auto;
 
   padding: 2rem;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
 }
 
 /* --- SECTIONS IN MAIN ----------*/
